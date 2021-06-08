@@ -12,5 +12,6 @@ pipeline {
                 echo 'Testing source'
                 sh 'mvn test'
             }
+        }
     }
 }
