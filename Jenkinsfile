@@ -7,5 +7,10 @@ pipeline {
                 sh 'mvn clean compile'
             }
         }
+        stage('test') {
+            steps {
+                echo 'Testing source'
+                sh 'mvn test'
+            }
     }
 }
